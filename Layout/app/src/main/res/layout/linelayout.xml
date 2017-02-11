@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="你好啊" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="這叫hint" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="call"
+        android:text="呼叫" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="margin是空格" />
+
+    <Switch
+        android:id="@+id/switch1"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="wifikaiguan"
+        android:text="WIFI"
+        android:textOff="@string/wifi_off"
+        android:textOn="@string/wifi_on" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="wifikai"
+        android:text="WLAN开" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="wifiguan"
+        android:text="WLAN关" />
+
+
+</LinearLayout>
