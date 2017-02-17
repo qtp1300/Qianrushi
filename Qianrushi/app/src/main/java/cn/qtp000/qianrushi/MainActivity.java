@@ -7,6 +7,7 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
+import function.*;
 
 import static cn.qtp000.qianrushi.R.styleable.View;
 
@@ -16,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         ImageButton upbtn = (ImageButton) findViewById(R.id.upButton);
         ImageButton leftbtn = (ImageButton) findViewById(R.id.leftButton);
         ImageButton rightbtn = (ImageButton) findViewById(R.id.RIGHTButton);
@@ -24,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         leftbtn.setOnClickListener(new anjian());
         rightbtn.setOnClickListener(new anjian());
         downbtn.setOnClickListener(new anjian());
+
     }
     class anjian implements android.view.View.OnClickListener{
         @Override
@@ -33,6 +36,10 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.upButton:
                     Toast.makeText(MainActivity.this,"上键",Toast.LENGTH_SHORT).show();
                     System.out.println("阿萨德");
+                    display.tosi();
+                    display dis = new display();
+                    dis.saays();
+
                     break;
                 case R.id.leftButton:
                     Toast.makeText(MainActivity.this,"左键",Toast.LENGTH_LONG).show();
